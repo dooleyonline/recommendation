@@ -78,7 +78,6 @@ if __name__ == "__main__":
     
     for user in data:
         # print(similar_matrix)
-        
         target_user_id = user["user_id"]
         prediction = calculate_user_rating(target_user_id, similar_matrix, matrix)
         rec_dict = recommendation_unseen(matrix, target_user_id, 10, prediction)
